@@ -1,230 +1,171 @@
-<!DOCTYPE html>
-    <html>
-    <head>
-        <title>
-            Electron Instruments
-        </title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-   
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./Images">
-    <style>
-    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
-    
-    body, html {
-      height: 100%;
-      line-height: 1.8;
-    }
-    
-    /* Full height image header */
-   
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Electron Instuments</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="icon" type="image/x-icon" href="./assets/css/images/logo.ico">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">Welcome</a></li>
+							<li><a href="#one">Who we are</a></li>
+							<li><a href="#two">What we do</a></li>
+							<li><a href="#three">Get in touch</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
 
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-.bgimg-1 {
+				<!-- Intro -->
+					<section id="intro" class="wrapper style2 fullscreen fade-up">
+						<div class="inner">
+							<h1 id="logo">Electron Instruments</h1>
+							<p>Sequencing and Purifying Proteins. </a></p>
+							<ul class="actions">
+								<li><a href="#one" class="button scrolly">Learn more</a></li>
+							</ul>
+						</div>
+					</section>
 
-  background-position: center;
-    background-size: cover;
-    filter: brightness(150%);
-    background-image: class="logoimg-1";
-    min-height: 100%;
+				<!-- One -->
+					<section id="one" class="wrapper style1 spotlights">
+						<section>
+							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>ABOUT THE COMPANY </h2>
+									<p>We are a small start-up focusing on doing the behind the scene bits, making your life easier.</p>
+									
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>We know time is vaulable </h2>
+									<p>Our swift solutions drive impactful discoveries, saving time and advancing scientific frontiers
+										Saving time for everyone</p>
+									
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								
+							</div>
+						</section>
+					</section>
 
-}
-    .w3-bar .w3-button {
-      padding: 16px;
-    }
-    </style>
-    </head>
-    <body>
-    
-    <!-- Navbar (sit on top) -->
-    <div class="w3-top">
-      <div class="w3-bar w3-white w3-card" id="myNavbar">
-        <a href="#home" class="w3-bar-item w3-button w3-wide">LOGO</a>
-        <!-- Right-sided navbar links -->
-        <div class="w3-right w3-hide-small">
-          <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
-          <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
-         <!-- <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a> -->
-         <!-- <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-gbp"></i> PRICING</a> -->
-          <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
-        </div>
-        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-    
-        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
-    </div>
-    
-    <!-- Sidebar on small screens when clicking the menu icon -->
-    <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-      <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-      <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-      <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
-      <!--  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>-->
-     <!--  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a> -->
-      <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-    </nav>
-    
-    <!-- Header with full-height image -->
-    <header class="bgimg-1 w3-display-container " id="home">
-      <div class="w3-display-left w3-text-black" style="padding:48px">
-        <span class="w3-jumbo w3-hide-small  ">Electron Instruments</span><br>
-        <span class="w3-xxlarge w3-hide-large  w3-hide-medium ">Electron Instruments</span><br>
-        <p><a href="#contact" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off w3-greyscale-min">Process your protiens today</a></p>
-      </div> 
-      <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
-        <i class="fa fa-facebook-official w3-hover-opacity"></i>
-        <i class="fa fa-instagram w3-hover-opacity"></i>
-        <i class="fa fa-snapchat w3-hover-opacity"></i>
-        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-        <i class="fa fa-twitter w3-hover-opacity"></i>
-        <i class="fa fa-linkedin w3-hover-opacity"></i>
-      </div>
-    </header>
-    
-       <!-- Promo Section - "We know time matters"  -->
-       <div class="w3-container w3-light-grey" style="padding:128px 16px">
-        <div class="w3-row-padding">
-          <div class="w3-col m6">
-            <h3>We know time is vaulable .</h3>
-            <p>Our swift solutions drive impactful discoveries, saving time and advancing scientific frontiers<br>Saving time for everyone.</p>
-          </div>
-          <div class="w3-col m6">
-            <img class="w3-image w3-round-large" src="https://i.insider.com/63fcd8fbae0bf0001824d74c?width=700" alt="Buildings" width="700" height="394">
-          </div>
-        </div>
-      </div>
-      
-    <!-- About Section -->
-    <div class="w3-container" style="padding:128px 16px" id="about">
-      <h3 class="w3-center">ABOUT THE COMPANY</h3>
-      <p class="w3-center w3-large">We are a small start-up focusing on doing the behind the scene bits, making your life easier.</p>
-      <div class="w3-row-padding w3-center" style="margin-top:64px">
-        <div class="w3-quarter">
-          <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
-          <p class="w3-large">Innovative</p>
-          <p> Our team comprises specialists in computational biology, leveraging cutting-edge technology to predict protein structures accurately and efficiently.</p>
-        </div>
-        <div class="w3-quarter">
-          <i class="fa fa-clock-o w3-margin-bottom w3-jumbo"></i>
-          <p class="w3-large">Convenient</p>
-          <p>We specialise in providing user-friendly tools that eliminate the complexities of protein structure prediction, enabling scientists to focus on groundbreaking discoveries without the technical hurdles.</p>
-        </div>
-        <div class="w3-quarter">
-          <i class="fa fa-bar-chart w3-margin-bottom w3-jumbo"></i>
-          <p class="w3-large">Accuracy</p>
-          <p>We prioritise precision and reliability in our predictive models, ensuring our clients receive trustworthy and validated results crucial for their research and experiments.</p>
-        </div>
-        <div class="w3-quarter">
-          <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
-          <p class="w3-large">Pioneering</p>
-          <p>At our core, we are driven by a passion for advancing scientific progress. Our aim is to revolutionise protein structure prediction, contributing to breakthroughs that propel the scientific community forward.</p>
-        </div>
-      </div>
-    </div>
-    
-   
-    <!-- Team Section -->
-    <div class="w3-container w3-light-grey" style="padding:128px 16px" id="team">
-      <h3 class="w3-center">THE TEAM</h3>
-      <p class="w3-center w3-large">The people who run this company</p>
-      <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
-        <div class="w3-col l3 m6 w3-margin-bottom">
-          <div class="w3-card">
-            <img src="/w3images/team2.jpg" alt="Al" style="width:100%">
-            <div class="w3-container">
-              <h3>Dr.Almutasem Saleh</h3>
-              <p class="w3-opacity">CEO & Founder</p>
-              <pr> Almutasem Saleh, our visionary CEO and Founder, with a background in Medical Biochemistry and a Ph.D., he was a Research Associate at Imperial College London, exploring the complexities of DNA replication intermediates. As a proud Yemeni-born scientist, his journey is a testament to resilience, passion, and belief in shaping the future of scientific innovation.</p>
-              <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
-            </div>
-          </div>
-        </div>
-        <div class="w3-col l3 m6 w3-margin-bottom">
-          <div class="w3-card">
-            <img src="/w3images/team1.jpg" alt="Atawbah" style="width:100%">
-            <div class="w3-container">
-              <h3>Atawbah Saleh</h3>
-              <p class="w3-opacity">COO</p>
-              <p>Atawbah Saleh, our Chief Operating Officer (COO), encapsulates the belief that passion knows no boundaries. With a Biochemistry degree and a profound interest in AI, biotech, and protein visualisation, Atawbah's journey mirrors the strength of curiosity. Her narrative stands as proof that anyone, fuelled by passion, can carve a route in innovation.</p>
-              <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Contact Section -->
-    <div class="w3-container w3-dark-grey" style="padding:128px 16px" id="contact">
-      <h3 class="w3-center">Request Protien Sequencing</h3>
-      <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
-      <div style="margin-top:48px">
-        <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Birmingham, UK</p>
-        <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +44</p>
-        <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: electroninstruments@gmail.com</p>
-        <br>
-        <form action="/action_page.php" target="_blank">
-          <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
-          <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
-          <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
-          <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
-          <p>
-            <button class="w3-button w3-black" type="submit">
-              <i class="fa fa-paper-plane"></i> SEND MESSAGE
-            </button>
-          </p>
-        </form>
-        <!-- Image of location/map 
-        <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
-    -->  
-    </div>
-    </div>
-    
-    <!-- Footer -->
-    <footer class="w3-center w3-black w3-padding-64">
-      <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-      <div class="w3-xlarge w3-section">
-        <i class="fa fa-facebook-official w3-hover-opacity"></i>
-        <i class="fa fa-instagram w3-hover-opacity"></i>
-        <i class="fa fa-snapchat w3-hover-opacity"></i>
-        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-        <i class="fa fa-twitter w3-hover-opacity"></i>
-        <i class="fa fa-linkedin w3-hover-opacity"></i>
-      </div>
-    </footer>
-     
-    <script>
-    // Modal Image Gallery
-    function onClick(element) {
-      document.getElementById("img01").src = element.src;
-      document.getElementById("modal01").style.display = "block";
-      var captionText = document.getElementById("caption");
-      captionText.innerHTML = element.alt;
-    }
-    
-    
-    // Toggle between showing and hiding the sidebar when clicking the menu icon
-    var mySidebar = document.getElementById("mySidebar");
-    
-    function w3_open() {
-      if (mySidebar.style.display === 'block') {
-        mySidebar.style.display = 'none';
-      } else {
-        mySidebar.style.display = 'block';
-      }
-    }
-    
-    // Close the sidebar with the close button
-    function w3_close() {
-        mySidebar.style.display = "none";
-    }
-    </script>
-    
-    </body>
-    </html>
+				<!-- Two -->
+					<section id="two" class="wrapper style2 fade-up">
+						<div class="inner">
+							<h2>What we do</h2>
+							<p>We sepcialise in Protein Sequencing and Protein Purifcation</p>
+							<div class="features">
+								<section>
+									<span class="icon solid major fa-code"></span>
+									<h3>Protein Sequencing</h3>
+									<p>At our core, we decipher protein structures, fueling scientific progress and medical innovation.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-cog"></span>
+									<h3>Protein Purifcation</h3>
+									<p>PAt our company, we engineer precision protein purification robots, automating the refinement process to streamline research and accelerate scientific discovery.</p>
+								</section>
+							
+							</div>
+							
+						</div>
+					</section>
+
+				<!-- Three -->
+					<section id="three" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>Get in touch</h2>
+							<p>Interested in advancing your research with cutting-edge protein sequencing and purification technologies? Let's collaborate to unlock new insights and possibilities. Reach out to us today to explore how our expertise in protein sequencing and purification can propel your projects forward.</p>
+							<div class="split style1">
+								<section>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="name">Name</label>
+												<input type="text" name="name" id="name" />
+											</div>
+											<div class="field half">
+												<label for="email">Email</label>
+												<input type="text" name="email" id="email" />
+											</div>
+											<div class="field">
+												<label for="message">Message</label>
+												<textarea name="message" id="message" rows="5"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><a href="" class="button submit">Send Message</a></li>
+										</ul>
+									</form>
+								</section>
+								<section>
+									<ul class="contact">
+										
+										<li>
+											<h3>Email</h3>
+											<a href="#">support@electroninstuments.com</a>
+										</li>
+										
+										<li>
+											<h3>Social</h3>
+											<ul class="icons">
+												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
